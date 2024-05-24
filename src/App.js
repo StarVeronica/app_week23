@@ -1,23 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
+import Card from './components/TariffCard';
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Card price="300" mbit="10" color="blue"></Card>
+      <Card price="450" mbit="50" color="green"></Card>
+      <Card price="550" mbit="100" color="red"></Card>
+      <Card price="1000" mbit="200" color="black"></Card>
     </div>
   );
 }
